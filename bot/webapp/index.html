@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moliya Hisobotlari</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Moliya Hisobotlari</h1>
+            <div class="period-selector">
+                <button class="period-btn active" data-period="day">Kun</button>
+                <button class="period-btn" data-period="week">Hafta</button>
+                <button class="period-btn" data-period="month">Oy</button>
+                <button class="period-btn" data-period="year">Yil</button>
+                <button class="period-btn" data-period="all">Hammasi</button>
+            </div>
+        </header>
+        
+        <div class="summary-cards">
+            <div class="card income">
+                <h3>Daromad</h3>
+                <p class="amount" id="total-income">0</p>
+            </div>
+            <div class="card expense">
+                <h3>Xarajat</h3>
+                <p class="amount" id="total-expense">0</p>
+            </div>
+            <div class="card balance">
+                <h3>Balans</h3>
+                <p class="amount" id="balance">0</p>
+            </div>
+        </div>
+        
+        <div class="charts-container">
+            <div class="chart-box">
+                <h3>Xarajatlar</h3>
+                <div class="chart" id="expense-chart"></div>
+                <div class="chart-legend" id="expense-legend"></div>
+            </div>
+            <div class="chart-box">
+                <h3>Daromadlar</h3>
+                <div class="chart" id="income-chart"></div>
+                <div class="chart-legend" id="income-legend"></div>
+            </div>
+        </div>
+        
+        <div class="transactions-list">
+            <h3>So'nggi tranzaksiyalar</h3>
+            <div id="transactions-container">
+                <!-- Tranzaksiyalar shu yerda ko'rsatiladi -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

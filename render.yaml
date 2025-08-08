@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: financebot-webapp
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd bot/webapp && python server.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+    plan: free

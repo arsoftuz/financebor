@@ -1,1 +1,1 @@
-web: cd bot/webapp && python server.py
+web: cd bot/webapp && gunicorn --workers 4 --bind 0.0.0.0:$PORT server:app

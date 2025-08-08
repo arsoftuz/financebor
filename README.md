@@ -80,7 +80,7 @@ python server.py
   ]
 }
 ```
-4. Environment Variables bo'limida `.env` fayli ma'lumotlarini kiritish
+4. Environment Variables bo'limida `.env` fayli ma'lumotlarini kiritish kerak
 
 ## Tuzilish
 
